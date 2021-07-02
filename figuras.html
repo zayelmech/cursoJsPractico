@@ -7,12 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras</title>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
-    <canvas id="canvasToDraw" width="300" height="400" style="border:1px solid #000000;"></canvas>
+
+
+    <main>
+
+        <h1>Figuras geometricas basicas</h1>
+
+        <h3>Cuadrado</h3>
+        <canvas id="canvasToDraw" width="320" height="320" style="border:1px solid #000000;"></canvas>
+
+
+        <form action="">
+
+            <label for="cuadrado">
+                L:
+            </label>
+            <input type="number" name="" id="cuadrado" class="inputNumber">
+            <button type="button" onClick="perimetroCuadrado()" id="perimetroButton">Calcular Perimetro</button>
+            <button type="button ">Calcular Area</button>
+        </form>
+
+    </main>
+
+
 
 </body>
-<script src="./figuras.js"></script>
+<script src="./figuras.js "></script>
 
 </html>

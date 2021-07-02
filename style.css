@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+main {
+    background-color: aqua;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inputNumber {
+    width: 45px;
+}

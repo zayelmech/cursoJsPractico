@@ -7,17 +7,24 @@ ctx.moveTo(0, 0);
 ctx.lineTo(200, 100);
 
 ctx.stroke();
-
+console.group("Cuadrado");
 const ladoCuadrado = 5;
 console.log("Lados del cuadrado " + ladoCuadrado + "cm");
 
-const perimetroCuadrado = 4 * ladoCuadrado;
+function perimetroCuadrado(ladoCuadrado) {
+    let text = document.getElementById("cuadrado").value;
+    ladoCuadrado = text;
+    console.log(4 * ladoCuadrado);
+    return 4 * ladoCuadrado;
+}
+console.log(`Perimetro = ${perimetroCuadrado(ladoCuadrado)} cm`);
 
-console.log(`Perimetro = ${perimetroCuadrado} cm`);
+function areaCuadrado(ladoCuadrado) {
+    return Math.pow(ladoCuadrado, 2);
+}
+console.log(`Area = ${areaCuadrado(ladoCuadrado)} cm^2`);
 
-const areaCuadrado = Math.pow(ladoCuadrado, 2);
-
-console.log(`Area = ${areaCuadrado} cm^2`);
+console.groupEnd();
 
 
 console.group("Triángulos");
